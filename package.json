@@ -1,0 +1,30 @@
+{
+  "name": "api-restful-blog",
+  "version": "1.0.0",
+  "description": "API Rest using NodeJS and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lordkev23/API-RESTful-Blog.git"
+  },
+  "author": "Lord Kev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lordkev23/API-RESTful-Blog/issues"
+  },
+  "homepage": "https://github.com/Lordkev23/API-RESTful-Blog#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "multer": "^1.4.5-lts.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
