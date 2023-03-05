@@ -20,6 +20,13 @@ app.use(express.json()
 );
 
 //Routes
+const routes_article = require("./routes/article");
+
+//charging routes
+app.use("/api", routes_article);
+
+
+//Routes hardcoding
 app.get("/pruebe", (req,res)=>{
 
     console.log("End Point 'pruebe' working");
