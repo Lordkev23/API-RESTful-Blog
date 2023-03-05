@@ -16,9 +16,42 @@ const port = 3900;
 app.use(cors());
 
 //Change Body to Object JS
-app.use(express.json());
+app.use(express.json()
+);
 
 //Routes
+app.get("/pruebe", (req,res)=>{
+
+    console.log("End Point 'pruebe' working");
+
+    return res.status(200).json([{
+        name: "Kevin",
+        lastname: "Villanueva",
+        age: "28 years old"
+    }, 
+    {
+        name: "David",
+        lastname: "Villanueva",
+        age: "26 years old"
+    }, 
+    {
+        name: "Nathaly",
+        lastname: "Villanueva",
+        age: "17 years old"
+    }]);
+
+});
+
+app.get("/", (req,res)=>{
+
+    return res.status(200).send(`
+        <div>
+            <h1>Starting a new project</h1>
+            <h2>about Api Rest</h2>
+            <h3>with Node & MongoDB</h3>
+        </div>
+    `);
+});
 
 //Server & listen http requests
 app.listen(port, ()=>{
