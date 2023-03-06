@@ -26,7 +26,29 @@ const names = (req,res)=>{
 
 }
 
+const create = (req,res)=>{
+
+    //Collect parameters per post to save
+
+
+    //Validate Data
+
+
+    //Create the object to save
+
+
+    //Assign values ​​to object based on model (manual or automatic)
+
+
+    //Save the article in Data Base
+
+    return res.status(200).json({
+        messagge:"Action of Save"
+    })
+}
+
 module.exports = {
     test,
-    names
+    names,
+    create
 }
